@@ -130,19 +130,11 @@ function greeting(obj) {
 
 //Code Here
 
-
-
-
-totalPopulation(obj){
- 
- let {utah, california, texas, arizona} = obj
- let sum = `${utah} + ${california} + ${texas} + ${arizona}`
- return sum;
-
+function totalPopulation(obj) {
+  let { utah, california, texas, arizona } = obj;
+  let sum = utah + california + texas + arizona;
+  return sum;
 }
-
-
-
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
@@ -155,6 +147,12 @@ totalPopulation(obj){
 */
 
 //Code Here
+
+function ingredients(obj) {
+  let { carb, fat, protein } = obj;
+  let arrNew = [];
+  return arrNew;
+}
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
