@@ -38,6 +38,8 @@ console.log(dog["name"]);
 
 //Code here
 
+console.log(dog["color"]);
+
 //////////////////////////// PROBLEM 5 ////////////////////////////
 /*
   Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday.
