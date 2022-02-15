@@ -19,6 +19,12 @@ console.log(me);
 //and goodBoy/goodGirl (a boolean).
 
 //Code here
+let dog = {
+  name: "Ola",
+  color: "White",
+  age: 6,
+  goodBoy: true,
+};
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
