@@ -130,6 +130,20 @@ function greeting(obj) {
 
 //Code Here
 
+
+
+
+totalPopulation(obj){
+ 
+ let {utah, california, texas, arizona} = obj
+ let sum = `${utah} + ${california} + ${texas} + ${arizona}`
+ return sum;
+
+}
+
+
+
+
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
 /*
