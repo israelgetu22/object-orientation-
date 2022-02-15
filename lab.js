@@ -150,9 +150,11 @@ function totalPopulation(obj) {
 
 function ingredients(obj) {
   let { carb, fat, protein } = obj;
-  let arrNew = [];
+  let arrNew = [carb, fat, protein];
   return arrNew;
 }
+
+console.log(ingredients({ carb: "bread", fat: "lipids", protein: "egg" }));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -174,6 +176,11 @@ var user = {
 
 //Code Here
 
+user.name = "Bryan G. Smith";
+user.email = "bryan.smith@devmounta.in";
+
+console.log(user);
+
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
@@ -181,14 +188,26 @@ var user = {
 
 //Code Here
 
+delete user.age;
+console.log(user);
+
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
-  Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
+  Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: 
+  name, age, color.
   Outside of your class, create an instance of your cat, passing in whatever values you would like.
   Print the name of your cat instance using dot notation.
 */
 
 //Code here
+
+class Cat {
+  constructor(name, age, color) {
+    (this.name = name), (this.age = age), (this.color = color);
+  }
+}
+let catA = new Cat("ola", 4, "white");
+console.log(catA);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
