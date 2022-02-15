@@ -98,6 +98,9 @@ var carDetails = {
 
 //Code Here
 
+let { color, make, model, year } = carDetails;
+console.log(`${color}`);
+
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
 /*
