@@ -31,7 +31,6 @@ let dog = {
 
 //Code here
 console.log(dog.name);
-console.log(dog["name"]);
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
@@ -49,12 +48,12 @@ console.log(dog["color"]);
 //Code here
 
 let favoriteThings = {
-  band: "band",
-  food: "food",
-  person: "person",
-  book: "book",
-  movie: "movie",
-  holiday: "holiday",
+  band: "Rolling Stones",
+  food: "Burger",
+  person: "Winston Churchill",
+  book: "Secret",
+  movie: "Frozen",
+  holiday: "Road Trip",
 };
 console.log(favoriteThings.person);
 
@@ -98,8 +97,7 @@ var carDetails = {
 
 //Code Here
 
-let { color, make, model, year } = carDetails;
-console.log(`${color}`);
+//const { color, make, model, year } = car;
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -114,7 +112,7 @@ function greeting(obj) {
   let { firstName, lastName, title } = obj;
 
   // Do not edit the code below.
-  return "Hello, " + `${title} + " " + ${firstName} + " " + ${lastName} + "!"`;
+  return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
 
@@ -150,6 +148,7 @@ function totalPopulation(obj) {
 
 function ingredients(obj) {
   let { carb, fat, protein } = obj;
+
   let arrNew = [carb, fat, protein];
   return arrNew;
 }
@@ -203,7 +202,9 @@ console.log(user);
 
 class Cat {
   constructor(name, age, color) {
-    (this.name = name), (this.age = age), (this.color = color);
+    this.name = name;
+    this.age = age;
+    this.color = color;
   }
 }
 let catA = new Cat("ola", 4, "white");
@@ -222,14 +223,17 @@ console.log(catA);
 
 class Wizard {
   constructor(name, age, favoriteSpell) {
-    function castSpell() {
-      console.log("{name} has cast {favoriteSpell}");
-    }
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+  castSpell() {
+    console.log(`"${this.name} has cast ${this.favoriteSpell}"`);
   }
 }
 
-let WizardA = new Wizard("Sali", 14, "Hope");
-console.log(WizardA);
+const WizardA = new Wizard("Sali", 14, "Hope");
+WizardA.castSpell();
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
