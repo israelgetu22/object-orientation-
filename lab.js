@@ -211,7 +211,8 @@ console.log(catA);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
-  Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
+  Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: 
+  name, age, favoriteSpell.
   Add a function to your Wizard class called castSpell. This function should print "{name} has cast {favoriteSpell}"
   Outside of your class, create an instance of your Wizard, passing in whatever values you would like.
   Call the castSpell function on the instance of your wizard.
@@ -219,6 +220,16 @@ console.log(catA);
 
 //Code here
 
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    function castSpell() {
+      console.log("{name} has cast {favoriteSpell}");
+    }
+  }
+}
+
+let WizardA = new Wizard("Sali", 14, "Hope");
+console.log(WizardA);
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
