@@ -247,6 +247,7 @@ WizardA.castSpell();
     when we create a new phone, we're putting it in our inventory
     and it won't be sold yet. 
 
+    
     Create a method called 'sell'.
     sell should be a function that changes the value of sold to true and prints the string: '{brand} {model} has been sold.'
     
